@@ -1,0 +1,8 @@
+---
+title: "About"
+author: "Anton Sutiagin"
+
+---
+
+This webpage was created for posting assignments for my Data Visualization class.
+

@@ -1,0 +1,60 @@
+---
+title: "Assignment 1"
+author: "Anton Sutiagin"
+date: 2024-9-11
+
+---
+
+## Generative Art
+
+Generative Art is a process of algorithmically generating new ideas, forms, shapes, colors or patterns. First, you create rules that provide boundaries for the creation process. Then a computer  follows those rules to produce new works on your behalf.
+
+Source: [https://aiartists.org/generative-art-design](https://aiartists.org/generative-art-design)
+
+### Examples of Generative Art
+
+![Example 1](images/Generative+Art+by+Manolo+Gamboa+Naon.jpeg)
+
+
+
+Generative Art by Manolo Gamboa Naon, an Argentinian artist who uses algorithmic tools including Processing to create art.
+
+Source: [https://aiartists.org/generative-art-design](https://aiartists.org/generative-art-design)
+
+![Example 2](images/Computer+Generated+Art+by+Anders+Hoff.jpg)
+
+Generative art by Anders Hoff. This is part of his project “Inconvergent”, which explores the complex behavior that emerges from systems with simple rules.
+
+Source:[https://aiartists.org/generative-art-design](https://aiartists.org/generative-art-design)
+
+![Example 3](images/Generative Art_Tate.jpg)
+
+Harold Cohen. Untitled Computer Drawing (1982). Tate
+© Harold Cohen
+
+Source: [https://www.tate.org.uk/art/art-terms/g/generative-art](https://www.tate.org.uk/art/art-terms/g/generative-art)
+
+## Fall Became Summer
+
+![Fall R-Plot with a Different Color](images/Summer Plot_Titled.png)
+
+## Example of Chart
+
+![Chart in Public Administration](images/Chart for Writing a Critique.png)
+
+Source: Jensen, U. T., Salomonsen, H. H., & Moynihan, D. P. (2018). Communicating the Vision: How Face-to-Face Dialogue Facilitates Transformational Leadership. Public Administration Review, 78(3), 350–361. [https://doi.org/10.1111/puar.12922](https://doi.org/10.1111/puar.12922)
+
+
+Papers in public administration, my major, typically include tables and black-and-white charts, such as the one from an article I recently read for another class, which is shown above.
+
+The chart clearly shows the marginal effect of transformational leadership on mission valence for different levels of face-to-face dialogue. This makes it easy to understand how the three variables interact.
+
+The axes are well-labeled, making it clear what is being measured and how to interpret the data. The notes additionally help to read the chart, especially in case of anything is not fully clear from the chart per se.
+
+Including 95% confidence intervals helps to convey the uncertainty around the estimates, which is crucial for making informed decisions in public administration.
+
+However, it is not fully clear why different values of face-to-face dialogue seem to be grouped or unequally distributed along the x-axis. Extra labels between the "rare" and "extensive" values might help clarify this.
+
+Additionally, the following could be recommended for other contexts beyond Academia or when publishing in another journal with more reader friendly standards. Using different colors or line styles could make the chart more visually appealing and easier to distinguish between different elements.
+
+Moreover, if this chart is being used in a digital format, adding interactive elements (like tooltips or clickable points) could enhance user engagement and understanding.
