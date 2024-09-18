@@ -1,0 +1,66 @@
+---
+title: "Preparation for Class 04"
+author: "Anton Sutiagin"
+date: 2024-9-18
+
+---
+
+### Notes on Edward Tufte’s Presentation “The Future of Data Analysis”
+
+
+
+:::{.text-right}
+*A purpose of a data display is to assist reasoning about its content.*
+
+*Showing and thinking become as one.*
+
+Edward Tufte
+:::
+
+
+In his 2016 presentation, Edward Tufte explores the evolving landscape of data visualization and its impact on understanding complex information. He emphasizes the importance of clarity, precision, and efficiency in data presentation. He argues that the future of data analysis hinges on the effective communication of complex data through visual means, highlighting the need for simplicity without sacrificing depth.
+
+Tufte underscores the necessity of integrating statistical thinking with visual design. He advocates for visualizations that reveal data accurately and meaningfully, facilitating deeper insights.
+
+
+![*Visualization of Measles Cases in the U.S. before and after Measles Vaccination*](images/Measles.png)
+
+
+*Source: Edward Tufte, "The Future of Data Analysis"*
+
+
+![*Map of Swiss Alps*](images/Swiss-Alps.png)
+
+
+*Source: Edward Tufte, "The Future of Data Analysis"*
+
+
+He also promotes the idea of maximizing data density in visualizations, allowing viewers to glean more information with less cognitive effort. Tufte sees successful examples of this approach in Goggle maps providing rich information to billions of people across the globe who seem not to find it overwhelming at all.
+
+![*Mapping of a 2.5’’ Video of a Soccer Match Visualizing the Goal*](images/Soccer.png)
+
+*Source: Edward Tufte, "The Future of Data Analysis"*
+
+
+Thus, Tufte's presentation calls for a future in data analysis that prioritizes the seamless integration of design and analytical rigor, ensuring that visualizations not only inform but also inspire deeper understanding.
+
+
+At the same time, he addresses the issue of data and data analysis quality, discussing the crisis in data analysis. Tufte cites various studies that explore the problematic status of many research conclusions and issues with the replication of published research results (e.g., Ioannidis, J. P. A. Why Most Published Research Findings Are False; Lazer et al. The Parable of Goggle Flu: Traps in Big Data Analysis). The speaker cites John W. Tukey: **“The data may not contain the answer. And, if you torture the data long enough, it will tell you anything.”**
+
+
+![*Plot of Unemployment vs. Inflation Rates in the U.S. as an Example of Selective Data Analysis*](images/Unemployment-Inflation.png)
+
+*Source: Edward Tufte, "The Future of Data Analysis"*
+
+
+![*Discrepancies between Google Flu Forecast and CDC Actual Flu Cases Data*](images/Flu.png)
+
+*Source: Edward Tufte, "The Future of Data Analysis"*
+
+
+Tufte calls for a deeper look at data that we analyze and its connection to the real world. Not uncommonly, the way data is produced can be compromised, with “tilts” (subtle biases or directional shifts that analysts, intentionally or unintentionally, may introduce when interpreting data) aimed at generating publishable findings.
+
+He emphasizes honesty in research design, analysis, and representation of research findings, and envisions a greater role of data forensics in the future to ensure validity of research on human behavior. 
+
+Tufte sees the future of confirmatory data analysis in pre-specified methods to prevent data search in order to generate “findings” (according to practices of CDC). He also urges to “go out in the field and observe how data is made” and “look at the real world, not just its representations.”
+

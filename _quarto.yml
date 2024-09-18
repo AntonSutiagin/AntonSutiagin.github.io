@@ -9,6 +9,8 @@ website:
         href: about.qmd
       - text: Assignment 1
         href: assignment1.qmd
+      - text: Prep for Class 04
+        href: prep-for-class-04.qmd
     right:
       - icon: github
         href: https://github.com/AntonSutiagin

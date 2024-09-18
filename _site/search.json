@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "prep-for-class-04.html",
+    "href": "prep-for-class-04.html",
+    "title": "Preparation for Class 04",
+    "section": "",
+    "text": "Notes on Edward Tufte’s Presentation “The Future of Data Analysis”\n\nA purpose of a data display is to assist reasoning about its content.\nShowing and thinking become as one.\nEdward Tufte\n\nIn his 2016 presentation, Edward Tufte explores the evolving landscape of data visualization and its impact on understanding complex information. He emphasizes the importance of clarity, precision, and efficiency in data presentation. He argues that the future of data analysis hinges on the effective communication of complex data through visual means, highlighting the need for simplicity without sacrificing depth.\nTufte underscores the necessity of integrating statistical thinking with visual design. He advocates for visualizations that reveal data accurately and meaningfully, facilitating deeper insights.\n\n\n\nVisualization of Measles Cases in the U.S. before and after Measles Vaccination\n\n\nSource: Edward Tufte, “The Future of Data Analysis”\n\n\n\nMap of Swiss Alps\n\n\nSource: Edward Tufte, “The Future of Data Analysis”\nHe also promotes the idea of maximizing data density in visualizations, allowing viewers to glean more information with less cognitive effort. Tufte sees successful examples of this approach in Goggle maps providing rich information to billions of people across the globe who seem not to find it overwhelming at all.\n\n\n\nMapping of a 2.5’’ Video of a Soccer Match Visualizing the Goal\n\n\nSource: Edward Tufte, “The Future of Data Analysis”\nThus, Tufte’s presentation calls for a future in data analysis that prioritizes the seamless integration of design and analytical rigor, ensuring that visualizations not only inform but also inspire deeper understanding.\nAt the same time, he addresses the issue of data and data analysis quality, discussing the crisis in data analysis. Tufte cites various studies that explore the problematic status of many research conclusions and issues with the replication of published research results (e.g., Ioannidis, J. P. A. Why Most Published Research Findings Are False; Lazer et al. The Parable of Goggle Flu: Traps in Big Data Analysis). The speaker cites John W. Tukey: “The data may not contain the answer. And, if you torture the data long enough, it will tell you anything.”\n\n\n\nPlot of Unemployment vs. Inflation Rates in the U.S. as an Example of Selective Data Analysis\n\n\nSource: Edward Tufte, “The Future of Data Analysis”\n\n\n\nDiscrepancies between Google Flu Forecast and CDC Actual Flu Cases Data\n\n\nSource: Edward Tufte, “The Future of Data Analysis”\nTufte calls for a deeper look at data that we analyze and its connection to the real world. Not uncommonly, the way data is produced can be compromised, with “tilts” (subtle biases or directional shifts that analysts, intentionally or unintentionally, may introduce when interpreting data) aimed at generating publishable findings.\nHe emphasizes honesty in research design, analysis, and representation of research findings, and envisions a greater role of data forensics in the future to ensure validity of research on human behavior.\nTufte sees the future of confirmatory data analysis in pre-specified methods to prevent data search in order to generate “findings” (according to practices of CDC). He also urges to “go out in the field and observe how data is made” and “look at the real world, not just its representations.”"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This webpage was created for posting assignments for my Data Visualization class."
+  },
+  {
     "objectID": "assignment1.html",
     "href": "assignment1.html",
     "title": "Assignment 1",
@@ -26,12 +40,5 @@
     "title": "Assignment 1",
     "section": "Example of Chart",
     "text": "Example of Chart\n\n\n\nChart in Public Administration\n\n\nSource: Jensen, U. T., Salomonsen, H. H., & Moynihan, D. P. (2018). Communicating the Vision: How Face-to-Face Dialogue Facilitates Transformational Leadership. Public Administration Review, 78(3), 350–361. https://doi.org/10.1111/puar.12922\nPapers in public administration, my major, typically include tables and black-and-white charts, such as the one from an article I recently read for another class, which is shown above.\nThe chart clearly shows the marginal effect of transformational leadership on mission valence for different levels of face-to-face dialogue. This makes it easy to understand how the three variables interact.\nThe axes are well-labeled, making it clear what is being measured and how to interpret the data. The notes additionally help to read the chart, especially in case of anything is not fully clear from the chart per se.\nIncluding 95% confidence intervals helps to convey the uncertainty around the estimates, which is crucial for making informed decisions in public administration.\nHowever, it is not fully clear why different values of face-to-face dialogue seem to be grouped or unequally distributed along the x-axis. Extra labels between the “rare” and “extensive” values might help clarify this.\nAdditionally, the following could be recommended for other contexts beyond Academia or when publishing in another journal with more reader friendly standards. Using different colors or line styles could make the chart more visually appealing and easier to distinguish between different elements.\nMoreover, if this chart is being used in a digital format, adding interactive elements (like tooltips or clickable points) could enhance user engagement and understanding."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This webpage was created for posting assignments for my Data Visualization class."
   }
 ]
