@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Anton Sutiagin">
+<meta name="dcterms.date" content="2024-09-25">
 
-<title>About – Data Visualization</title>
+<title>Preparation for Class 05 – Data Visualization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -92,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -104,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Prep for Class 04</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./prep-for-class-05.html"> 
+    <a class="nav-link active" href="./prep-for-class-05.html" aria-current="page"> 
 <span class="menu-text">Prep for Class 05</span></a>
   </li>  
   <li class="nav-item">
@@ -130,15 +131,31 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#big-data-analytics-pitfalls" id="toc-big-data-analytics-pitfalls" class="nav-link active" data-scroll-target="#big-data-analytics-pitfalls">Big Data Analytics Pitfalls</a></li>
+  <li><a href="#overfitting-and-overparameterization" id="toc-overfitting-and-overparameterization" class="nav-link" data-scroll-target="#overfitting-and-overparameterization">Overfitting and Overparameterization</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  <li><a href="#note-on-hadley-wickhams-keynote-lecture-at-embl" id="toc-note-on-hadley-wickhams-keynote-lecture-at-embl" class="nav-link" data-scroll-target="#note-on-hadley-wickhams-keynote-lecture-at-embl">Note on Hadley Wickham’s Keynote Lecture at EMBL</a>
+  <ul class="collapse">
+  <li><a href="#tidyverse-and-data-science-workflow" id="toc-tidyverse-and-data-science-workflow" class="nav-link" data-scroll-target="#tidyverse-and-data-science-workflow">Tidyverse and Data Science Workflow</a></li>
+  <li><a href="#orthogonal-components" id="toc-orthogonal-components" class="nav-link" data-scroll-target="#orthogonal-components">Orthogonal Components</a></li>
+  <li><a href="#importance-of-code" id="toc-importance-of-code" class="nav-link" data-scroll-target="#importance-of-code">Importance of Code</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Preparation for Class 05</h1>
 </div>
 
 
@@ -152,6 +169,12 @@ ul.task-list li input[type="checkbox"] {
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 25, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -161,9 +184,63 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This webpage was created for posting assignments for my Data Visualization class.</p>
+<section id="big-data-analytics-pitfalls" class="level2">
+<h2 class="anchored" data-anchor-id="big-data-analytics-pitfalls">Big Data Analytics Pitfalls</h2>
+<p>Big data offers immense potential for insights and innovation, but it also introduces significant risks. One of the key pitfalls is <strong>Big Data Hubris</strong>—the assumption that large datasets can replace traditional data collection and analysis methods. The case of Google Flu Trends (GFT) discussed in Lazer et al.’s article in Science (2014) exemplifies this.</p>
+<p>GFT used Google search data to predict flu outbreaks but ultimately failed due to overconfidence in the data’s predictive capabilities. Despite having millions of search queries, the model missed critical trends, such as the 2009 H1N1 pandemic, and consistently overestimated flu prevalence compared to CDC data. This failure illustrates that data volume alone does not guarantee accuracy; attention must be paid to the quality, validity, and reliability of data sources.</p>
+<p>Another key issue is <strong>algorithm dynamics</strong> that may lead to endogeneity. Changes in the underlying algorithms and user behaviors, such as modifications in Google’s search engine, can alter the data-generating process, leading to inaccurate predictions. In the GFT case, these changes contributed to persistent errors, further complicating the model’s ability to predict flu trends accurately. As a result, big data analytics can be vulnerable when it relies too heavily on ever-evolving, non-static data sources.</p>
+</section>
+<section id="overfitting-and-overparameterization" class="level2">
+<h2 class="anchored" data-anchor-id="overfitting-and-overparameterization">Overfitting and Overparameterization</h2>
+<p><strong>Overfitting</strong> occurs when a model is tailored too closely to the specific data it was trained on, capturing noise rather than meaningful patterns (signal). GFT demonstrated overfitting by correlating flu-related search terms with a small set of historical flu cases. This resulted in the inclusion of spurious variables, such as high school basketball searches, which were unrelated to flu outbreaks. Although these variables fit past data well, they failed to predict future flu activity, highlighting the dangers of overfitting in big data models.</p>
+<p>Similarly, <strong>overparameterization</strong>—using too many variables in a model—exacerbates overfitting by making the model overly sensitive to small variations in the training data. GFT’s reliance on millions of search terms without sufficient filtering or theory-driven reasoning caused the model to generalize poorly. This led to overestimations of flu prevalence for over two years.</p>
+<p>To mitigate these issues, it is essential to combine big data methods with traditional approaches. For example, integrating GFT data with CDC reports and recalibrating the model based on real-world inputs improved predictive accuracy. This approach shows that while big data can provide valuable insights, it must be supplemented with well-established analytical methods to avoid the pitfalls of overfitting, overparameterization, and dynamic data sources.</p>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<p>Lazer, D., Kennedy, R., King, G., &amp; Vespignani, A. (2014). The Parable of Google Flu: Traps in Big Data Analysis. <em>Science (American Association for the Advancement of Science), 343</em>(6176), 1203–1205. <a href="https://doi.org/10.1126/science.1248506">https://doi.org/10.1126/science.1248506</a></p>
+<p>Overfitting. (n.d.). In Wikipedia. Retrieved September 25, 2024, from <a href="https://en.wikipedia.org/wiki/Overfitting">https://en.wikipedia.org/wiki/Overfitting</a></p>
+</section>
+</section>
+<section id="note-on-hadley-wickhams-keynote-lecture-at-embl" class="level2">
+<h2 class="anchored" data-anchor-id="note-on-hadley-wickhams-keynote-lecture-at-embl">Note on Hadley Wickham’s Keynote Lecture at EMBL</h2>
+<p>In his keynote lecture at EMBL, Hadley Wickham highlights several key technologies and techniques essential for data visualization and data science through the lens of the R programming environment.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/r-packages-evolution.png" class="img-fluid figure-img"></p>
+<figcaption>Evolution of three threads of R packages</figcaption>
+</figure>
+</div>
+<p>Source: <a href="https://www.youtube.com/watch?v=9YTNYT1maa4">Hadley Wickham, Keynote Lecture at EMLB</a></p>
+<section id="tidyverse-and-data-science-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="tidyverse-and-data-science-workflow">Tidyverse and Data Science Workflow</h3>
+<p>Wickham introduces the concept of the tidyverse, a collection of R packages, such as <em>ggplot2</em>, <em>dplyr</em>, <em>tidyr</em>, and <em>purrr</em>, that simplify data manipulation, transformation, and visualization. His focus is on how these tools make data analysis more efficient by promoting consistency in data formatting and handling.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/tidyverse.png" class="img-fluid figure-img"></p>
+<figcaption>Tidyverse</figcaption>
+</figure>
+</div>
+<p>Source: <a href="https://www.youtube.com/watch?v=9YTNYT1maa4">Hadley Wickham, Keynote Lecture at EMLB</a></p>
+<p>“Tidy” data, a central principle in his work, ensures that each variable is stored in its own column, and each observation gets its own row. This format makes data easier to analyze and visualize.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wickham-lecture.png" class="img-fluid figure-img"></p>
+<figcaption>R Packages for Data Visualizaton, Reshaping, and Manipulation</figcaption>
+</figure>
+</div>
+<p>Source: <a href="https://www.youtube.com/watch?v=9YTNYT1maa4">Hadley Wickham, Keynote Lecture at EMLB</a></p>
+</section>
+<section id="orthogonal-components" class="level3">
+<h3 class="anchored" data-anchor-id="orthogonal-components">Orthogonal Components</h3>
+<p>Wickham emphasizes the importance of breaking down data into orthogonal components, meaning that different variables or features of the data should be analyzed separately to gain clear insights. This is akin to separating the dimensions of a dataset to better visualize and understand its structure. He demonstrates this concept with visualizations, such as using GDP per capita versus life expectancy in the well-known <em>Gapminder World</em> dataset and its visualization by Hans Rosling.</p>
+</section>
+<section id="importance-of-code" class="level3">
+<h3 class="anchored" data-anchor-id="importance-of-code">Importance of Code</h3>
+<p>A significant theme in Wickham’s presentation is the power of code. He stresses that code is not only for computation but also serves as text, which makes it readable and reproducible. This focus on the reproducibility of data analysis is vital for transparency and verification in research, allowing others to follow and replicate analyses.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
