@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Anton Sutiagin">
-<meta name="dcterms.date" content="2024-09-25">
+<meta name="dcterms.date" content="2024-10-09">
 
-<title>Preparation for Class 05 – Data Visualization</title>
+<title>Preparation for Class 07 – Data Visualization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -105,11 +105,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Prep for Class 04</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./prep-for-class-05.html" aria-current="page"> 
+    <a class="nav-link" href="./prep-for-class-05.html"> 
 <span class="menu-text">Prep for Class 05</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./prep-for-class-07.html"> 
+    <a class="nav-link active" href="./prep-for-class-07.html" aria-current="page"> 
 <span class="menu-text">Prep for Class 07</span></a>
   </li>  
   <li class="nav-item">
@@ -140,17 +140,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#big-data-analytics-pitfalls" id="toc-big-data-analytics-pitfalls" class="nav-link active" data-scroll-target="#big-data-analytics-pitfalls">Big Data Analytics Pitfalls</a></li>
-  <li><a href="#overfitting-and-overparameterization" id="toc-overfitting-and-overparameterization" class="nav-link" data-scroll-target="#overfitting-and-overparameterization">Overfitting and Overparameterization</a>
-  <ul class="collapse">
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul></li>
-  <li><a href="#note-on-hadley-wickhams-keynote-lecture-at-embl" id="toc-note-on-hadley-wickhams-keynote-lecture-at-embl" class="nav-link" data-scroll-target="#note-on-hadley-wickhams-keynote-lecture-at-embl">Note on Hadley Wickham’s Keynote Lecture at EMBL</a>
-  <ul class="collapse">
-  <li><a href="#tidyverse-and-data-science-workflow" id="toc-tidyverse-and-data-science-workflow" class="nav-link" data-scroll-target="#tidyverse-and-data-science-workflow">Tidyverse and Data Science Workflow</a></li>
-  <li><a href="#orthogonal-components" id="toc-orthogonal-components" class="nav-link" data-scroll-target="#orthogonal-components">Orthogonal Components</a></li>
-  <li><a href="#importance-of-code" id="toc-importance-of-code" class="nav-link" data-scroll-target="#importance-of-code">Importance of Code</a></li>
-  </ul></li>
+  <li><a href="#literate-programming" id="toc-literate-programming" class="nav-link active" data-scroll-target="#literate-programming">Literate Programming</a></li>
+  <li><a href="#four-pillars-of-data-visualization" id="toc-four-pillars-of-data-visualization" class="nav-link" data-scroll-target="#four-pillars-of-data-visualization">Four Pillars of Data Visualization</a></li>
+  <li><a href="#music-visualization" id="toc-music-visualization" class="nav-link" data-scroll-target="#music-visualization">Music Visualization</a></li>
   </ul>
 </nav>
     </div>
@@ -159,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Preparation for Class 05</h1>
+<h1 class="title">Preparation for Class 07</h1>
 </div>
 
 
@@ -176,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 25, 2024</p>
+      <p class="date">October 9, 2024</p>
     </div>
   </div>
   
@@ -188,62 +180,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="big-data-analytics-pitfalls" class="level2">
-<h2 class="anchored" data-anchor-id="big-data-analytics-pitfalls">Big Data Analytics Pitfalls</h2>
-<p>Big data offers immense potential for insights and innovation, but it also introduces significant risks. One of the key pitfalls is <strong>Big Data Hubris</strong>—the assumption that large datasets can replace traditional data collection and analysis methods. The case of Google Flu Trends (GFT) discussed in Lazer et al.’s article in Science (2014) exemplifies this.</p>
-<p>GFT used Google search data to predict flu outbreaks but ultimately failed due to overconfidence in the data’s predictive capabilities. Despite having millions of search queries, the model missed critical trends, such as the 2009 H1N1 pandemic, and consistently overestimated flu prevalence compared to CDC data. This failure illustrates that data volume alone does not guarantee accuracy; attention must be paid to the quality, validity, and reliability of data sources.</p>
-<p>Another key issue is <strong>algorithm dynamics</strong> that may lead to endogeneity. Changes in the underlying algorithms and user behaviors, such as modifications in Google’s search engine, can alter the data-generating process, leading to inaccurate predictions. In the GFT case, these changes contributed to persistent errors, further complicating the model’s ability to predict flu trends accurately. As a result, big data analytics can be vulnerable when it relies too heavily on ever-evolving, non-static data sources.</p>
+<section id="literate-programming" class="level2">
+<h2 class="anchored" data-anchor-id="literate-programming">Literate Programming</h2>
+<p>Literate programming is a programming paradigm introduced by Donald Knuth (1984) that combines code and documentation in a single, coherent document. It focuses on writing code in a way that is understandable to humans, emphasizing that code should not only instruct the computer but also communicate clearly with other people, including the programmer’s future self.</p>
+<p>As Knuth noted, “Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do (Knuth, 1984, In Bowers &amp; Voors, 2016, p.&nbsp;834).”</p>
+<p>The main task is to write explanations, using natural language, that describe the logic and structure of the program, while embedding the code itself within those explanations. This approach makes the program easier to read and understand, both for others who might need to review or modify the code later or oneself.</p>
+<p>For example, a typical literate programming document will include:</p>
+<ul>
+<li><p><strong>Explanatory Text</strong>: Sections of prose that describe what the code is intended to do, the purpose of different functions, and the logic behind decisions.</p></li>
+<li><p><strong>Code Chunks</strong>: Sections of actual code that implement the logic described in the text. These chunks can be extracted and compiled separately if needed.</p></li>
+</ul>
+<p>Tools like R Markdown or Jupyter Notebooks facilitate literate programming by allowing users to blend documentation with code execution directly in a structured way.</p>
+<p>Literate programming is particularly useful in research and scientific contexts where reproducibility is critical, as it allows a single document to serve as both a research paper and an executable program.</p>
+<p>My only concern regarding literate programming is that it may require a bit more time to systematically employ this approach. As a result, there is always a temptation to diverge from it and not to write detailed comments when being overwhelmed.</p>
 </section>
-<section id="overfitting-and-overparameterization" class="level2">
-<h2 class="anchored" data-anchor-id="overfitting-and-overparameterization">Overfitting and Overparameterization</h2>
-<p><strong>Overfitting</strong> occurs when a model is tailored too closely to the specific data it was trained on, capturing noise rather than meaningful patterns (signal). GFT demonstrated overfitting by correlating flu-related search terms with a small set of historical flu cases. This resulted in the inclusion of spurious variables, such as high school basketball searches, which were unrelated to flu outbreaks. Although these variables fit past data well, they failed to predict future flu activity, highlighting the dangers of overfitting in big data models.</p>
-<p>Similarly, <strong>overparameterization</strong>—using too many variables in a model—exacerbates overfitting by making the model overly sensitive to small variations in the training data. GFT’s reliance on millions of search terms without sufficient filtering or theory-driven reasoning caused the model to generalize poorly. This led to overestimations of flu prevalence for over two years.</p>
-<p>To mitigate these issues, it is essential to combine big data methods with traditional approaches. For example, integrating GFT data with CDC reports and recalibrating the model based on real-world inputs improved predictive accuracy. This approach shows that while big data can provide valuable insights, it must be supplemented with well-established analytical methods to avoid the pitfalls of overfitting, overparameterization, and dynamic data sources.</p>
-<section id="references" class="level3">
-<h3 class="anchored" data-anchor-id="references">References</h3>
-<p>Lazer, D., Kennedy, R., King, G., &amp; Vespignani, A. (2014). The Parable of Google Flu: Traps in Big Data Analysis. <em>Science (American Association for the Advancement of Science), 343</em>(6176), 1203–1205. <a href="https://doi.org/10.1126/science.1248506">https://doi.org/10.1126/science.1248506</a></p>
-<p>Overfitting. (n.d.). In Wikipedia. Retrieved September 25, 2024, from <a href="https://en.wikipedia.org/wiki/Overfitting">https://en.wikipedia.org/wiki/Overfitting</a></p>
+<section id="four-pillars-of-data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="four-pillars-of-data-visualization">Four Pillars of Data Visualization</h2>
+<p>The four pillars of data visualization—distribution, relationship, composition, and comparison—are fundamental principles that guide effective visual communication of data:</p>
+<ul>
+<li><p><strong>Distribution</strong>: Focuses on how data is spread across a range. It highlights the frequency and patterns in the data, such as the spread of values or the concentration of certain results. Common charts for visualizing distribution include histograms, box plots, and density plots.</p></li>
+<li><p><strong>Relationship</strong>: This pillar emphasizes the connections or correlations between two or more variables. It is useful for identifying patterns, trends, or interactions among variables. Scatter plots and bubble charts are commonly used to visualize relationships.</p></li>
+<li><p><strong>Composition</strong>: Refers to how different parts make up a whole. It’s ideal for showing proportions and how various elements contribute to a total. Pie charts, stacked bar charts, and treemaps are often used for visualizing composition.</p></li>
+<li><p><strong>Comparison</strong>: This pillar is about comparing values across categories, time periods, or groups to identify differences and similarities. Bar charts, line charts, and area charts are typically used to make comparisons clear and easy to understand.</p></li>
+</ul>
+<p>Each pillar helps to effectively convey different aspects of data, guiding the selection of visualization types to best represent the insights within the data.</p>
 </section>
-</section>
-<section id="note-on-hadley-wickhams-keynote-lecture-at-embl" class="level2">
-<h2 class="anchored" data-anchor-id="note-on-hadley-wickhams-keynote-lecture-at-embl">Note on Hadley Wickham’s Keynote Lecture at EMBL</h2>
-<p>In his keynote lecture at EMBL, Hadley Wickham highlights several key technologies and techniques essential for data visualization and data science through the lens of the R programming environment.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/r-packages-evolution.png" class="img-fluid figure-img"></p>
-<figcaption>Evolution of three threads of R packages</figcaption>
-</figure>
-</div>
-<p>Source: <a href="https://www.youtube.com/watch?v=9YTNYT1maa4">Hadley Wickham, Keynote Lecture at EMLB</a></p>
-<section id="tidyverse-and-data-science-workflow" class="level3">
-<h3 class="anchored" data-anchor-id="tidyverse-and-data-science-workflow">Tidyverse and Data Science Workflow</h3>
-<p>Wickham introduces the concept of the tidyverse, a collection of R packages, such as <em>ggplot2</em>, <em>dplyr</em>, <em>tidyr</em>, and <em>purrr</em>, that simplify data manipulation, transformation, and visualization. His focus is on how these tools make data analysis more efficient by promoting consistency in data formatting and handling.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/tidyverse.png" class="img-fluid figure-img"></p>
-<figcaption>Tidyverse</figcaption>
-</figure>
-</div>
-<p>Source: <a href="https://www.youtube.com/watch?v=9YTNYT1maa4">Hadley Wickham, Keynote Lecture at EMLB</a></p>
-<p>“Tidy” data, a central principle in his work, ensures that each variable is stored in its own column, and each observation gets its own row. This format makes data easier to analyze and visualize.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/wickham-lecture.png" class="img-fluid figure-img"></p>
-<figcaption>R Packages for Data Visualizaton, Reshaping, and Manipulation</figcaption>
-</figure>
-</div>
-<p>Source: <a href="https://www.youtube.com/watch?v=9YTNYT1maa4">Hadley Wickham, Keynote Lecture at EMLB</a></p>
-</section>
-<section id="orthogonal-components" class="level3">
-<h3 class="anchored" data-anchor-id="orthogonal-components">Orthogonal Components</h3>
-<p>Wickham emphasizes the importance of breaking down data into orthogonal components, meaning that different variables or features of the data should be analyzed separately to gain clear insights. This is akin to separating the dimensions of a dataset to better visualize and understand its structure. He demonstrates this concept with visualizations, such as using GDP per capita versus life expectancy in the well-known <em>Gapminder World</em> dataset and its visualization by Hans Rosling.</p>
-</section>
-<section id="importance-of-code" class="level3">
-<h3 class="anchored" data-anchor-id="importance-of-code">Importance of Code</h3>
-<p>A significant theme in Wickham’s presentation is the power of code. He stresses that code is not only for computation but also serves as text, which makes it readable and reproducible. This focus on the reproducibility of data analysis is vital for transparency and verification in research, allowing others to follow and replicate analyses.</p>
+<section id="music-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="music-visualization">Music Visualization</h2>
+<p>In the suggested <a href="https://www.youtube.com/watch?v=dFDx-L7PcrY">video</a>, Stephen Malinowski visualized the fugue from J. S. Bach’s Fantasia and Fugue in A minor, BWV 904. Malinowski arranged the music for two instruments (brass and woodwind) using music production software and then created a video.</p>
+<p>He used the following elements in his visualization:</p>
+<ol type="1">
+<li>The vertical position of geometrical forms is associated with the height of sounds (pitch).</li>
+<li>Different shapes are associated with the instruments: circles refer to brass, horizontal bars – to woodwind).</li>
+<li>Size of circles and length of bars mean the duration of sounds: the bigger the circles and the longer the bars – the longer the sounds.</li>
+<li>Finally, color refers to different voices in this polyphonic musical piece, such as soprano, alto, tenor, and bass.</li>
+</ol>
+<p>Music visualization has quite a long history tracing back to the 19th century. For example, Alexander Scriabin, a composer from Russia, included a part for a “light keyboard,” or <em>luce</em>, in his symphonic piece <em>Prometheus: The Poem of Fire</em> (1910). Scriabin had a condition believed to be synesthesia, which led him to associate specific musical keys with particular colors.</p>
+<p>Thus, the light keyboard was intended to project colored lights corresponding to the notes being played. Each pitch would have a corresponding color, creating a visual display during the performance. However, technology at the time could not fully realize his vision, so many early performances omitted this element.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
