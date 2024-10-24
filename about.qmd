@@ -6,3 +6,6 @@ author: "Anton Sutiagin"
 
 This webpage was created for posting assignments for my Data Visualization class.
 
+<iframe width="800" height="600"
+src="https://antonsutiagin.shinyapps.io/Horsepower/"
+frameborder="0" allowfullscreen></iframe>
