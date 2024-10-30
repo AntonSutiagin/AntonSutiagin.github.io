@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Anton Sutiagin">
-<meta name="dcterms.date" content="2024-09-11">
+<meta name="dcterms.date" content="2024-10-30">
 
-<title>Assignment 1 – Data Visualization</title>
+<title>Assignment 6 – Data Visualization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./assignment1.html" aria-current="page"> 
+    <a class="nav-link" href="./assignment1.html"> 
 <span class="menu-text">Assignment 1</span></a>
   </li>  
   <li class="nav-item">
@@ -105,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Assignment 4</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./assignment6.html"> 
+    <a class="nav-link active" href="./assignment6.html" aria-current="page"> 
 <span class="menu-text">Assignment 6</span></a>
   </li>  
   <li class="nav-item">
@@ -152,12 +152,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#generative-art" id="toc-generative-art" class="nav-link active" data-scroll-target="#generative-art">Generative Art</a>
+  <li><a href="#shiny-applications" id="toc-shiny-applications" class="nav-link active" data-scroll-target="#shiny-applications">Shiny Applications</a>
   <ul class="collapse">
-  <li><a href="#examples-of-generative-art" id="toc-examples-of-generative-art" class="nav-link" data-scroll-target="#examples-of-generative-art">Examples of Generative Art</a></li>
+  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1">Exercise 1</a></li>
+  <li><a href="#exercise-2-reactivity" id="toc-exercise-2-reactivity" class="nav-link" data-scroll-target="#exercise-2-reactivity">Exercise 2 (Reactivity)</a></li>
+  <li><a href="#exercise-3" id="toc-exercise-3" class="nav-link" data-scroll-target="#exercise-3">Exercise 3</a></li>
+  <li><a href="#shiny-app-using-usarrests-dataset" id="toc-shiny-app-using-usarrests-dataset" class="nav-link" data-scroll-target="#shiny-app-using-usarrests-dataset">Shiny App Using USArrests Dataset</a></li>
   </ul></li>
-  <li><a href="#fall-became-summer" id="toc-fall-became-summer" class="nav-link" data-scroll-target="#fall-became-summer">Fall Became Summer</a></li>
-  <li><a href="#example-of-chart" id="toc-example-of-chart" class="nav-link" data-scroll-target="#example-of-chart">Example of Chart</a></li>
   </ul>
 </nav>
     </div>
@@ -166,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Assignment 1</h1>
+<h1 class="title">Assignment 6</h1>
 </div>
 
 
@@ -183,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 11, 2024</p>
+      <p class="date">October 30, 2024</p>
     </div>
   </div>
   
@@ -195,65 +196,30 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="generative-art" class="level2">
-<h2 class="anchored" data-anchor-id="generative-art">Generative Art</h2>
-<p>Generative Art is a process of algorithmically generating new ideas, forms, shapes, colors or patterns. First, you create rules that provide boundaries for the creation process. Then a computer follows those rules to produce new works on your behalf.</p>
-<p>Source: <a href="https://aiartists.org/generative-art-design">https://aiartists.org/generative-art-design</a></p>
-<section id="examples-of-generative-art" class="level3">
-<h3 class="anchored" data-anchor-id="examples-of-generative-art">Examples of Generative Art</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Generative+Art+by+Manolo+Gamboa+Naon.jpeg" class="img-fluid figure-img"></p>
-<figcaption>Example 1</figcaption>
-</figure>
-</div>
-<p>Generative Art by Manolo Gamboa Naon, an Argentinian artist who uses algorithmic tools including Processing to create art.</p>
-<p>Source: <a href="https://aiartists.org/generative-art-design">https://aiartists.org/generative-art-design</a></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Computer+Generated+Art+by+Anders+Hoff.jpg" class="img-fluid figure-img"></p>
-<figcaption>Example 2</figcaption>
-</figure>
-</div>
-<p>Generative art by Anders Hoff. This is part of his project “Inconvergent”, which explores the complex behavior that emerges from systems with simple rules.</p>
-<p>Source:<a href="https://aiartists.org/generative-art-design">https://aiartists.org/generative-art-design</a></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Generative Art_Tate.jpg" class="img-fluid figure-img"></p>
-<figcaption>Example 3</figcaption>
-</figure>
-</div>
-<p>Harold Cohen. Untitled Computer Drawing (1982). Tate © Harold Cohen</p>
-<p>Source: <a href="https://www.tate.org.uk/art/art-terms/g/generative-art">https://www.tate.org.uk/art/art-terms/g/generative-art</a></p>
+<section id="shiny-applications" class="level2">
+<h2 class="anchored" data-anchor-id="shiny-applications">Shiny Applications</h2>
+<section id="exercise-1" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-1">Exercise 1</h3>
+<iframe width="1000" height="600" src="https://antonsutiagin.shinyapps.io/Example_1/" frameborder="0" allowfullscreen="">
+</iframe>
 </section>
+<section id="exercise-2-reactivity" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-2-reactivity">Exercise 2 (Reactivity)</h3>
+<iframe width="1000" height="800" src="https://antonsutiagin.shinyapps.io/Example_2_Reactivity/" frameborder="0" allowfullscreen="">
+</iframe>
 </section>
-<section id="fall-became-summer" class="level2">
-<h2 class="anchored" data-anchor-id="fall-became-summer">Fall Became Summer</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Summer Plot_Titled.png" class="img-fluid figure-img"></p>
-<figcaption>Fall R-Plot with a Different Color</figcaption>
-</figure>
-</div>
+<section id="exercise-3" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-3">Exercise 3</h3>
+<iframe width="1000" height="600" src="https://antonsutiagin.shinyapps.io/Horsepower/" frameborder="0" allowfullscreen="">
+</iframe>
 </section>
-<section id="example-of-chart" class="level2">
-<h2 class="anchored" data-anchor-id="example-of-chart">Example of Chart</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Chart for Writing a Critique.png" class="img-fluid figure-img"></p>
-<figcaption>Chart in Public Administration</figcaption>
-</figure>
-</div>
-<p>Source: Jensen, U. T., Salomonsen, H. H., &amp; Moynihan, D. P. (2018). Communicating the Vision: How Face-to-Face Dialogue Facilitates Transformational Leadership. Public Administration Review, 78(3), 350–361. <a href="https://doi.org/10.1111/puar.12922">https://doi.org/10.1111/puar.12922</a></p>
-<p>Papers in public administration, my major, typically include tables and black-and-white charts, such as the one from an article I recently read for another class, which is shown above.</p>
-<p>The chart clearly shows the marginal effect of transformational leadership on mission valence for different levels of face-to-face dialogue. This makes it easy to understand how the three variables interact.</p>
-<p>The axes are well-labeled, making it clear what is being measured and how to interpret the data. The notes additionally help to read the chart, especially in case of anything is not fully clear from the chart per se.</p>
-<p>Including 95% confidence intervals helps to convey the uncertainty around the estimates, which is crucial for making informed decisions in public administration.</p>
-<p>However, it is not fully clear why different values of face-to-face dialogue seem to be grouped or unequally distributed along the x-axis. Extra labels between the “rare” and “extensive” values might help clarify this.</p>
-<p>Additionally, the following could be recommended for other contexts beyond Academia or when publishing in another journal with more reader friendly standards. Using different colors or line styles could make the chart more visually appealing and easier to distinguish between different elements.</p>
-<p>Moreover, if this chart is being used in a digital format, adding interactive elements (like tooltips or clickable points) could enhance user engagement and understanding.</p>
+<section id="shiny-app-using-usarrests-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="shiny-app-using-usarrests-dataset">Shiny App Using USArrests Dataset</h3>
+<iframe width="1000" height="1200" src="https://antonsutiagin.shinyapps.io/USArrests_Dashboard/" frameborder="0" allowfullscreen="">
+</iframe>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
