@@ -95,7 +95,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This webpage was created for posting assignments for my Data Visualization class."
+    "text": "Anton Sutiagin\n\n\nWelcome to my website!\nI am a second-year Ph.D. student and a Teaching Assistant at the University of Texas at Dallas (UTD) in the Public and Nonprofit Management program in the School of Economics, Politics, and Policy Sciences.\nI have created this website for posting assignments for some of my classes, such as Data Visualization and Knowledge Mining.\nContact information:\nAnton.Sutiagin@UTDallas.edu"
   },
   {
     "objectID": "prep-for-class-04.html",
@@ -131,5 +131,33 @@
     "title": "Preparation for Class 07",
     "section": "Music Visualization",
     "text": "Music Visualization\nIn the suggested video, Stephen Malinowski visualized the fugue from J. S. Bach’s Fantasia and Fugue in A minor, BWV 904. Malinowski arranged the music for two instruments (brass and woodwind) using music production software and then created a video.\nHe used the following elements in his visualization:\n\nThe vertical position of geometrical forms is associated with the height of sounds (pitch).\nDifferent shapes are associated with the instruments: circles refer to brass, horizontal bars – to woodwind).\nSize of circles and length of bars mean the duration of sounds: the bigger the circles and the longer the bars – the longer the sounds.\nFinally, color refers to different voices in this polyphonic musical piece, such as soprano, alto, tenor, and bass.\n\nMusic visualization has quite a long history tracing back to the 19th century. For example, Alexander Scriabin, a composer from Russia, included a part for a “light keyboard,” or luce, in his symphonic piece Prometheus: The Poem of Fire (1910). Scriabin had a condition believed to be synesthesia, which led him to associate specific musical keys with particular colors.\nThus, the light keyboard was intended to project colored lights corresponding to the notes being played. Each pitch would have a corresponding color, creating a visual display during the performance. However, technology at the time could not fully realize his vision, so many early performances omitted this element."
+  },
+  {
+    "objectID": "km-assignment1.html",
+    "href": "km-assignment1.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "In this review, we would like to compare the following two articles:\n\nBreiman, L. (2001). Statistical Modeling: The Two Cultures. Statistical Science, 16(3), 199-231. https://doi.org/10.1214/ss/1009213726\nShmueli, G. (2010). To Explain or to Predict? Statistical Science, 25(3), 289-310. https://doi.org/10.1214/10-STS330\n\nLeo Breiman and Galit Shmueli both critique conventional statistical modeling as it is used my non-statisticians in multiple sciences but approach the issue from somewhat different angles.\nBreiman focuses on the methodological divide between data modeling, which relies on traditional stochastic models (e.g., linear regression), and algorithmic modeling, which prioritizes predictive accuracy using machine learning techniques. He argues that statisticians have been too narrowly committed to parametric models, leading to limited applicability and poor real-world performance. His solution is to embrace algorithmic models, which may sacrifice interpretability but yield better predictions.\nShmueli distinguishes between explanatory modeling, which seeks to infer causal relationships, and predictive modeling, which aims to forecast future observations. The article also mentions descriptive modeling however it is not discussed in detail. The author argues that these two modeling goals are often conflated, leading researchers to assume that strong explanatory models inherently possess predictive power, a misconception that weakens both scientific inquiry and applied practice.\nWhile both authors advocate for a greater focus on prediction, their perspectives differ in emphasis. Breiman’s critique is methodological, arguing that statisticians should shift from restrictive parametric models to flexible machine learning approaches. Shmueli, on the other hand, offers a conceptual clarification, warning that researchers must clearly define whether their goal is explanation or prediction before selecting a modeling approach.\nAlthough Breiman promotes algorithmic models largely for their predictive accuracy, Shmueli’s argument suggests that even traditional statistical models can serve predictive purposes if applied correctly. Thus, Breiman’s work is a call to reform statistical practice, while Shmueli’s work is a theoretical framework to prevent misapplication of statistical models. Together, they highlight the importance of aligning modeling choices with research goals and challenge the conventional dominance of theory-driven statistical inference."
+  },
+  {
+    "objectID": "km-assignment1.html#comparative-review",
+    "href": "km-assignment1.html#comparative-review",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "In this review, we would like to compare the following two articles:\n\nBreiman, L. (2001). Statistical Modeling: The Two Cultures. Statistical Science, 16(3), 199-231. https://doi.org/10.1214/ss/1009213726\nShmueli, G. (2010). To Explain or to Predict? Statistical Science, 25(3), 289-310. https://doi.org/10.1214/10-STS330\n\nLeo Breiman and Galit Shmueli both critique conventional statistical modeling as it is used my non-statisticians in multiple sciences but approach the issue from somewhat different angles.\nBreiman focuses on the methodological divide between data modeling, which relies on traditional stochastic models (e.g., linear regression), and algorithmic modeling, which prioritizes predictive accuracy using machine learning techniques. He argues that statisticians have been too narrowly committed to parametric models, leading to limited applicability and poor real-world performance. His solution is to embrace algorithmic models, which may sacrifice interpretability but yield better predictions.\nShmueli distinguishes between explanatory modeling, which seeks to infer causal relationships, and predictive modeling, which aims to forecast future observations. The article also mentions descriptive modeling however it is not discussed in detail. The author argues that these two modeling goals are often conflated, leading researchers to assume that strong explanatory models inherently possess predictive power, a misconception that weakens both scientific inquiry and applied practice.\nWhile both authors advocate for a greater focus on prediction, their perspectives differ in emphasis. Breiman’s critique is methodological, arguing that statisticians should shift from restrictive parametric models to flexible machine learning approaches. Shmueli, on the other hand, offers a conceptual clarification, warning that researchers must clearly define whether their goal is explanation or prediction before selecting a modeling approach.\nAlthough Breiman promotes algorithmic models largely for their predictive accuracy, Shmueli’s argument suggests that even traditional statistical models can serve predictive purposes if applied correctly. Thus, Breiman’s work is a call to reform statistical practice, while Shmueli’s work is a theoretical framework to prevent misapplication of statistical models. Together, they highlight the importance of aligning modeling choices with research goals and challenge the conventional dominance of theory-driven statistical inference."
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Knowledge Mining Project",
+    "section": "",
+    "text": "My Knowledge Mining project will be posted here"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "My CV will be posted soon here"
   }
 ]
